@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block content %}
+  <div class="container">
+    <h2>{{name}}</h2>
+    <div class="decorate-df">
+      {{res.to_html() | safe}}
+    </div>
+  </div>
+{% endblock %}

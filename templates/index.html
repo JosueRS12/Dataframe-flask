@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vacunación Covid19</title>
+    <link href={{url_for('static', filename = 'styles/home/styles.css')}} rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>Data frame de Vacunación Covid19</h1>
+  <hr> 
+  <header>
+    <p>Construcción de un dataframe apartir de un dataset proveniente de datos 
+    abiertos de colombia. Apartir del cual, se proporciona una seriede consultas al usuario</p>
+    <a
+      href="https://www.datos.gov.co/Salud-y-Protecci-n-Social/Asignaci-n-de-dosis-de-vacuna-contra-COVID-19/sdvb-4x4j"
+      target="_blank">
+      Fuente Dataset
+    </a>
+  </header>
+
+  <section id="queries">
+    <h2>Dataframe</h2>
+    <div class="decorate-df">
+      {{showAll.to_html() | safe}}
+    </div>
+    <h2> Consultas </h2>
+    <ul>
+      <div>
+        <div class="decorate-queries">
+          <li>
+            <form action="/byColumn" method="POST">
+              <label for="column">Por columna:</label>
+              <input type="text" id="1" name="byCol" placeholder="nombre columna">
+              <input type="submit" id="s1" name="sCol" value="Consultar"/>
+            </form>
+          </li>
+        </div>
+      </div>
+      <div>
+        <div class="decorate-queries">
+          <li>por campo específio en territorio:</li>
+            <form action="/byField" method="POST">
+              <input type="text" id="2" name="byField" placeholder="nombre territorio">
+              <input type="submit" id="s2" name="s2" value="Consultar"/>
+            </form>
+          </div>
+      </div>
+        <div>
+          <div class="decorate-queries">
+            <li>Por Campo específico y columna específica:</li>
+            <form action="/byColVal" method="POST">
+              <input type="text" id="3" name="byCol" placeholder="nombre campo">
+              <input type="text" id="31" name="byVal" placeholder="nombre columna">
+              <input type="submit" id="s3" name="s3" value="Consultar"/>
+            </form>
+          </div>
+        </div>
+        <div>
+          <div class="decorate-queries">
+            <li>por cantida de vacunas > </li>
+            <form action="/byCount" method="POST">
+              <input type="text" id="4" name="byCount" placeholder="nombre columna">
+              <input type="submit" id="s4" name="s4" value="Consultar"/>
+            </form>
+          </div>
+        </div>
+        <div>
+          <div class="decorate-queries">
+            <li>Con mayor cantidad de vacunas: por tipo</li>
+            <form action="/maxByTypeVac" method="POST">
+              <input type="text" id="5" name="typeVac" placeholder="tipo vacuna">
+              <input type="submit" id="s5" name="s5" value="Consultar"/>
+            </form>
+          </div>
+      </div>
+    </ul>
+    {% block content%} {% endblock %}
+  </section>
+
+  <footer>
+   Copyright © 2021 Josué Rodríguez 
+  </footer>
+
+</body>
+</html>

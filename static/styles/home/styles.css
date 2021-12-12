@@ -1,0 +1,57 @@
+html{
+  min-height: 100%;
+}
+
+header{
+  margin-block: 3rem; 
+  width:40%;
+}
+
+body{
+  margin-left: 1rem;
+}
+
+.decorate-queries{
+  display: flex;
+  padding-block: 1rem;
+}
+
+li{
+ margin-inline: 1rem; 
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  position:static;
+  background: #01041d;
+  color: white;
+  width: 100%;
+  height: 2.5rem;
+}
+
+
+.decorate-df{
+  overflow-y: scroll;
+  height: 20rem;
+}
+
+thead{
+  background-color: #acd7fd;
+}
+
+table{
+  border: 1px solid blue;
+}
+
+#queries{
+  margin-bottom: 1rem;
+}
+
+.container{
+  max-width: 25rem;
+  margin: 0 auto;
+}

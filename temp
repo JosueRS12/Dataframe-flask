@@ -1,0 +1,42 @@
+
+      /*<!--<div class="container">-->*/
+        /*<!--<div class="decorate-queries">-->*/
+          /*<!--<li>por campo específio en territorio</li>-->*/
+          /*<!--<form action="">-->*/
+            /*<!--<input type="text" id="2" name="2" placeholder="nombre territorio">-->*/
+            /*<!--<input type="submit" id="s2" name="s2" value="Consultar"/>-->*/
+          /*<!--</form>-->*/
+        /*<!--</div>-->*/
+        /*<!--{{ queries.byValueTerritory.to_html() | safe }}-->*/
+      /*<!--</div>-->*/
+      /*<!--<div class="container">-->*/
+        /*<!--<div class="decorate-queries">-->*/
+          /*<!--<li>Por Campo específico y columna específica</li>-->*/
+          /*<!--<form action="">-->*/
+            /*<!--<input type="text" id="3" name="3" placeholder="nombre campo">-->*/
+            /*<!--<input type="text" id="31" name="31" placeholder="nombre columna">-->*/
+            /*<!--<input type="submit" id="s3" name="s3" value="Consultar"/>-->*/
+          /*<!--</form>-->*/
+        /*<!--</div>-->*/
+        /*<!--{{ queries.byColumnValue.to_html() | safe }}-->*/
+      /*<!--</div>-->*/
+      /*<!--<div class="container">-->*/
+        /*<!--<div class="decorate-queries">-->*/
+          /*<!--<li>por cantida de vacunas > </li>-->*/
+          /*<!--<form action="">-->*/
+            /*<!--<input type="text" id="4" name="4" placeholder="nombre columna">-->*/
+            /*<!--<input type="submit" id="s4" name="s4" value="Consultar"/>-->*/
+          /*<!--</form>-->*/
+        /*<!--</div>-->*/
+        /*<!--{{ queries.byColumnCountVaccines.to_html() | safe }}-->*/
+      /*<!--</div>-->*/
+      /*<!--<div class="container">-->*/
+        /*<!--<div class="decorate-queries">-->*/
+          /*<!--<li>Con mayor cantidad de vacunas: por tipo</li>-->*/
+          /*<!--<form action="">-->*/
+            /*<!--<input type="text" id="5" name="5" placeholder="tipo vacuna">-->*/
+            /*<!--<input type="submit" id="s5" name="s5" value="Consultar"/>-->*/
+          /*<!--</form>-->*/
+        /*<!--</div>-->*/
+        /*<!--{{ queries.maxByTypeVac.to_html() | safe }}-->*/
+      /*<!--</div>-->*/
